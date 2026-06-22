@@ -1,0 +1,8 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Личные файлы
+testing.py
+modules\Archive_module\Дневник.xlsx

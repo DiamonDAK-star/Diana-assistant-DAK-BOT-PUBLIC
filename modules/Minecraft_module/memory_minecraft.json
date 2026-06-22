@@ -1,0 +1,477 @@
+{
+    "texture_packs": [
+        {
+            "name": "3D farm",
+            "function": "Лучшие текстуры для фермы",
+            "link": "https://www.curseforge.com/minecraft/texture-packs/farm-3d"
+        },
+        {
+            "name": "Fresh animations",
+            "function": "Крутые анимации мобам",
+            "link": "https://www.curseforge.com/minecraft/texture-packs/fresh-animations"            
+        },
+        {
+            "name": "Fresh player animations",
+            "function": "Круты анимации игроку",
+            "link": "https://www.curseforge.com/minecraft/texture-packs/fa-player-extension"
+        },
+        {
+            "name": "Simple grass flowers",
+            "function": "Класненькие цветочки на земле",
+            "link": "https://www.curseforge.com/minecraft/texture-packs/simple-grass-flowers"
+        },
+        {
+            "name": "Brass craft",
+            "function": "Интерфейсы в стиле стимпанк",
+            "link": "https://www.curseforge.com/minecraft/texture-packs/create-mod-styled-texture-pack-fancy"
+        },
+        {
+            "name": "Slimes zip",
+            "function": "Добавляет вариации слаймам",
+            "link": "https://www.curseforge.com/minecraft/texture-packs/sludgy-slimes"
+        }
+        
+
+    ],
+    "nether": [
+        {
+            "1": "Портал",
+            "2": "Золотая броня",
+            "3": "Оружие (железо минимум)",
+            "4": "Броня (лазурит минимум)",
+            "5": "Еда",
+            "6": "Вода",
+            "7": "Джет пак - не обязательно ",
+            "8": "Щиты",
+            "9": "Факела",
+            "10": "Блоки",
+            "note": "Всё это нужно в 4 комплектах",
+            "note2": "Первым делом надо обезопасить вокруг портала"
+        }
+    ],
+    "chests": [
+        {
+            "1": "Соритровка",
+            "2": "Шахта",
+            "3": "Дерево",
+            "4": "Ферма",
+            "5": "броня и оружие",
+            "6": "Незер",
+            "7": "Край",
+            "8": "Лут с мобов",
+            "9": "прочее",
+            "note": "Шахта должен быть двойным"
+        }
+    ],
+
+    "other":[
+        {
+            "1": "/kill @e[type=alexsmobs:cockroach]",
+            "2": "",
+            "3": "Сборки:",
+            "4": "Minecraft Create Sky Industrie´s",
+            "5": "Create Stranded at Sea",
+            "6": "CFA create friendly adventure",
+            "7": "",
+            "8": "The Steampunk City [DOWNLOAD] | Aderlyon Build Team Minecraft Map https://share.google/Y91zzZVEJX9b7z4OQ",
+            "9": "kidnap - очень странный мод на майн",
+            "10": "TL2024Artem",
+            "11": "",
+            "12": "Идеи для выживания:",
+            "13": "Выживание на ледоколе",
+            "14": "Выживание на пустынном корабле",
+            "15": "https://youtube.com/shorts/hAhoTSvQWfc?si=pWWQavK9viB6ySv0 - Выживание с востонавлением мира",
+            "16": "Выживание на одном лаки блоке"
+        }
+    ],
+
+    "house-schematic": {
+        "resourses": [
+            "Если делать 2 домика рядом то тебе понадобится на 3 булыжника и 1 бревно больше)",
+            "51 булыжник",
+            "47 брёвен",
+            "1 дверь",
+            "2 земли",
+            "2 стеклянные панели",
+            "2 цветочка (любых)",
+            "3 факела"],
+
+        "components": [
+            "21 булыжник ",
+            "20 булыжниковых ступенек",
+            "21 бревно",
+            "40 досок",
+            "31 деревянных ступеньки (будет 32)",
+            "4 деревянных полублока (будет 6)",
+            "1 дверь ",
+            "3 стеклянные панели",
+            "4 люка",
+            "2 земли",
+            "2 цветочка"
+        ],
+
+        "front": [
+            ["air", "air", "cobblestone-stairs-front-right", "wood-top", "cobblestone-stairs-front-left", "air", "air", "air"],
+            ["air", "cobblestone-stairs-front-right", "planks", "planks", "planks", "cobblestone-stairs-front-left", "air", "air"],
+            ["cobblestone-stairs-front-right", "wood-side", "planks", "planks", "planks", "wood-side", "cobblestone-stairs-front-left", "air"],
+            ["air", "wood-side", "planks", "door-front-top", "planks", "wood-side", "air", "air"],
+            ["air", "wood-side", "planks", "door-front-bottom", "planks", "wood-side", "air", "air"],
+            ["air", "wood-side", "trap-door-front", "cobblestone-stairs-side-left", "trap-door-front", "wood-side", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "side": [
+            ["cobblestone-stairs-side-left", "stairs-side-front-left", "stairs-side-front-left", "stairs-side-front-left", "stairs-side-front-left", "stairs-side-front-left", "cobblestone-stairs-side-left", "air"],
+            ["cobblestone-stairs-side-left", "stairs-side-front-left", "stairs-side-front-left", "stairs-side-front-left", "stairs-side-front-left", "stairs-side-front-left", "cobblestone-stairs-side-left", "air"],
+            ["cobblestone-stairs-side-left", "stairs-side-front-left", "stairs-side-front-left", "stairs-side-front-left", "stairs-side-front-left", "stairs-side-front-left", "cobblestone-stairs-side-left", "air"],
+            ["air", "wood-side", "planks", "air", "planks", "wood-side", "air", "air"],
+            ["air", "wood-side", "planks", "planks", "planks", "wood-side", "flower", "air"],
+            ["air", "wood-side", "cobblestone", "cobblestone", "cobblestone", "wood-side", "trap-door-front", "trap-door-side-right"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        
+        "layer1": [
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "wood-top", "cobblestone", "cobblestone", "cobblestone", "wood-top", "air", "air"],
+            ["air","cobblestone", "cobblestone", "cobblestone", "cobblestone", "cobblestone", "air", "air"],
+            ["air","cobblestone", "cobblestone", "cobblestone", "cobblestone", "cobblestone", "air", "air"],
+            ["air","cobblestone", "cobblestone", "cobblestone", "cobblestone", "cobblestone", "air", "air"],
+            ["air", "wood-top", "cobblestone", "cobblestone", "cobblestone", "wood-top", "air", "air"],
+            ["air", "trap-door-side-left", "dirt", "cobblestone-stairs-side-left", "dirt", "trap-door-side-right", "air", "air"],
+            ["air", "air", "trap-door-top-right", "air", "trap-door-top-right", "air", "air", "air"]
+        ],
+
+        "layer2": [
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "wood-top", "planks", "planks", "planks", "wood-top", "air", "air"],
+            ["air","planks", "air", "air", "air", "planks", "air", "air"],
+            ["air","planks", "air", "air", "air", "planks", "air", "air"],
+            ["air","planks", "air", "air", "air", "planks", "air", "air"],
+            ["air", "wood-top", "planks", "trap-door-top-right", "planks", "wood-top", "air", "air"],
+            ["air", "air", "flower", "air", "flower", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+
+        "layer3": [
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "wood-top", "planks", "planks", "planks", "wood-top", "air", "air"],
+            ["air","planks", "air", "air", "air", "planks", "air", "air"],
+            ["air","planks", "air", "air", "air", "planks", "air", "air"],
+            ["air","planks", "air", "air", "air", "planks", "air", "air"],
+            ["air", "wood-top", "planks", "trap-door-top-right", "planks", "wood-top", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+
+        "layer4": [
+            ["cobblestone-stairs-top-right", "air", "air", "air", "air", "air", "cobblestone-stairs-top-left", "air"],
+            ["stairs-top-right", "wood-top", "planks", "planks", "planks", "wood-top", "stairs-top-left", "air"],
+            ["stairs-top-right","planks", "air", "air", "air", "planks", "stairs-top-left", "air"],
+            ["stairs-top-right","planks", "air", "air", "air", "planks", "stairs-top-left", "air"],
+            ["stairs-top-right","planks", "air", "air", "air", "planks", "stairs-top-left", "air"],
+            ["stairs-top-right", "wood-top", "planks", "planks", "planks", "wood-top", "stairs-top-left", "air"],
+            ["cobblestone-stairs-top-right", "air", "air", "air", "air", "air", "cobblestone-stairs-top-left", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "layer5": [
+            ["air", "cobblestone-stairs-top-right",  "air", "air", "air", "cobblestone-stairs-top-left", "air", "air"],
+            ["air", "stairs-top-right", "planks", "planks", "planks", "stairs-top-left", "air", "air"],
+            ["air", "stairs-top-right","air", "air", "air", "stairs-top-left", "air", "air"],
+            ["air", "stairs-top-right","air", "air", "air", "stairs-top-left", "air", "air"],
+            ["air", "stairs-top-right", "air", "air", "air", "stairs-top-left", "air", "air"],
+            ["air", "stairs-top-right", "planks", "planks", "planks", "stairs-top-left", "air", "air"],
+            ["air", "cobblestone-stairs-top-right", "air", "air", "air", "cobblestone-stairs-top-left", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "layer6": [
+            ["air", "cobblestone-stairs-top-right", "wood-side", "cobblestone-stairs-top-left", "air", "air", "air", "air"],
+            ["air", "stairs-top-right", "wood-side", "stairs-top-left", "air", "air", "air", "air"],
+            ["air", "stairs-top-right", "wood-side", "stairs-top-left", "air", "air", "air", "air"],
+            ["air", "stairs-top-right", "wood-side", "stairs-top-left", "air", "air", "air", "air"],
+            ["air", "stairs-top-right", "wood-side", "stairs-top-left", "air", "air", "air", "air"],
+            ["air", "stairs-top-right", "wood-side", "stairs-top-left", "air", "air", "air", "air"],
+            ["air", "cobblestone-stairs-top-right", "wood-side", "cobblestone-stairs-top-left", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ]
+    },
+
+    "field-shematic": {
+        "resourses": [""],
+        "components": [""],
+        "front": [],
+        "side": [],
+        "layer1": [
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ]
+        
+    },
+
+    "stable-shematic": {
+        "resourses": [
+            "7 бревен забор2 бревна на палки",
+            "1 бервно на калитку",
+            "4 бревна и 2 доски бревна на заборы",
+            "Сумарно: 26 бревен и 2 доски на всё"],
+        "components": [
+            "21 забор",
+            "36 полублоков",
+            "12 брёвен",
+            "1 калитка"
+        ],
+        "front": [
+            ["air", "planks-slab-B", "planks", "planks-slab-A", "planks", "planks-slab-B", "air", "air"],
+            ["planks-slab-A", "wood-side", "air", "air", "air", "wood-side", "planks-slab-A", "air"],
+            ["air", "wood-side", "air", "air", "air", "wood-side", "air", "air"],
+            ["air", "fence-side-C", "fence-side-A", "gate-front", "fence-side-A", "fence-side-B", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "side": [
+            ["planks-slab-B", "planks-slab-B", "planks-slab-B", "planks-slab-B", "air", "air", "air", "air"],
+            ["planks-slab-A", "planks-slab-A", "planks-slab-A", "planks-slab-A", "air", "air", "air", "air"],
+            ["wood-side", "air", "air", "wood-side", "air", "air", "air", "air"],
+            ["wood-side", "fence-side-A", "fence-side-A", "wood-side", "fence-side-A", "fence-side-A", "fence-side-A", "fence-side-B"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "layer1": [
+            ["air", "wood-top", "fence-top-A", "fence-top-A", "fence-top-A", "wood-top", "air", "air"],
+            ["air", "fence-top-B", "air", "air", "air", "fence-top-B", "air", "air"],
+            ["air", "fence-top-B", "air", "air", "air", "fence-top-B", "air", "air"],
+            ["air", "wood-top", "air", "air", "air", "wood-top", "air", "air"],
+            ["air", "fence-top-B", "air", "air", "air", "fence-top-B", "air", "air"],
+            ["air", "fence-top-B", "air", "air", "air", "fence-top-B", "air", "air"],
+            ["air", "fence-top-B", "air", "air", "air", "fence-top-B", "air", "air"],
+            ["air", "fence-top-D", "fence-top-A", "gate-top", "fence-top-A", "fence-top-C", "air", "air"]
+        ],
+        "layer2": [
+            ["air", "wood-top", "air", "air", "wood-top", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "wood-top", "air", "air", "wood-top", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "layer3": [
+            ["planks", "wood-top", "air", "air", "wood-top", "planks", "air", "air"],
+            ["planks", "air", "air", "air", "air", "planks", "air", "air"],
+            ["planks", "air", "air", "air", "air", "planks", "air", "air"],
+            ["planks", "wood-top", "air", "air", "wood-top", "planks", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "layer4": [
+            ["air", "planks", "planks", "planks", "planks", "air", "air", "air"],
+            ["air", "planks", "planks", "planks", "planks", "air", "air", "air"],
+            ["air", "planks", "planks", "planks", "planks", "air", "air", "air"],
+            ["air", "planks", "planks", "planks", "planks", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ]
+    },
+    "airship-shematic": {
+        "resourses": [
+            "32 бумаги или 16 шерсти",
+            "26 бревна (2 на плаки, 1 на полублоки, остальные на доски)",
+            "17 булыжника (из них 6 это гладкий камень и 3 это камень)",
+            "7 железа (слитки) (1 на кусочки и опционально)",
+            "1 золото (слитки)",
+            "1 стекляная панель",
+            "2 шерсти",
+            "1 уголь - опционально"
+        ],
+        "components": [
+            "16 воздушных шаров",
+            "16 досок",
+            "8 люков - опционально",
+            "8 заборов",
+            "6 ступенек",
+            "1 двигатель",
+            "1 штурвал",
+            "2 сиденья",
+            "4 сундука",
+            "1 фонарь - опционально"
+        ],
+        "front": [
+            ["air", "ballon", "ballon", "ballon", "air", "air", "air", "air"],
+            ["air", "ballon", "ballon", "ballon", "air", "air", "air", "air"],
+            ["air", "fence-top-B", "air", "fence-top-B", "air", "air", "air", "air"],
+            ["air", "fence-top-B", "air", "fence-top-B", "air", "air", "air", "air"],
+            ["air", "stairs-side-upsidedown-left", "stairs-side-front-left", "stairs-side-upsidedown-right", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "side": [
+            ["air", "ballon", "planks", "planks", "ballon", "air", "air", "air"],
+            ["air", "ballon", "trap-door-front", "trap-door-front", "ballon", "ballon", "air", "air"],
+            ["air", "ballon", "planks", "planks", "ballon", "air", "air", "air"],
+            ["air", "fence-top-B", "air", "air", "fence-top-B", "air", "air", "air"],
+            ["air", "fence-top-B", "air", "air", "fence-top-B", "air", "air", "air"],
+            ["stairs-side-upsidedown-left", "stairs-side-front-left", "chest-front", "chest-front", "stairs-side-front-left", "stairs-side-upsidedown-right", "air", "air"],
+            ["air", "planks-slab-A", "planks-slab-A", "planks-slab-A", "planks-slab-A", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "layer1": [
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "planks", "air", "air", "air", "air", "air"],
+            ["air", "air", "planks", "air", "air", "air", "air", "air"],
+            ["air", "air", "planks", "air", "air", "air", "air", "air"],
+            ["air", "air", "planks", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "layer2": [
+            ["air", "air", "planks", "air", "air", "air", "air", "air"],
+            ["air", "planks", "engine", "planks", "air", "air", "air", "air"],
+            ["air", "chest-top", "seat", "chest-top", "air", "air", "air", "air"],
+            ["air", "chest-top", "seat", "chest-top", "air", "air", "air", "air"],
+            ["air", "planks", "staring-weel", "planks", "air","air", "air", "air"],
+            ["air", "air", "planks", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "layer3": [
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "fence-top-center", "air", "fence-top-center", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "fence-top-center", "air", "fence-top-center", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "layer4": [
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "fence-top-center", "air", "fence-top-center", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "fence-top-center", "air", "fence-top-center", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "layer5": [
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "ballon", "ballon", "ballon", "air", "air", "air", "air"],
+            ["air", "planks", "planks", "planks", "air", "air", "air", "air"],
+            ["air", "planks", "planks", "planks", "air", "air", "air", "air"],
+            ["air", "ballon", "ballon", "ballon", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "layer6": [
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "ballon", "ballon", "ballon", "air", "air", "air", "air"],
+            ["trap-door-side-left", "planks", "air", "planks", "trap-door-side-right", "air", "air", "air"],
+            ["trap-door-side-left", "planks", "air", "planks", "trap-door-side-right", "air", "air", "air"],
+            ["air", "ballon", "air", "ballon", "air", "air", "air", "air"],
+            ["air", "air", "ballon", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "layer7": [
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "ballon", "ballon", "ballon", "air", "air", "air", "air"],
+            ["air", "planks", "planks", "planks", "air", "air", "air", "air"],
+            ["air", "planks", "planks", "planks", "air", "air", "air", "air"],
+            ["air", "ballon", "ballon", "ballon", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ]
+    },
+    "boat-shematic": {
+        "resourses": [
+            "18 брёвен (1 на палки, 2 на полублоки, остальное на доски)",
+            "25 булыжника (из них 6 это гладкий камень и 3 это камень)",
+            "7 железа (слитки) (1 на кусочки и опционально)",
+            "1 золото (слитки)",
+            "4 нитки"
+
+        ],
+        "components": [
+            "10 ступенек",
+            "8 люков",
+            "2 доски",
+            "3 полублока",
+            "1 бочка",
+            "1 верстак",
+            "1 печь",
+            "1 двигатель",
+            "1 штурвал",
+            "1 сиденье"
+        ],
+        "front": [
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "trap-door-top-left", "air", "air", "air", "air", "air"],
+            ["trap-door-side-left", "stairs-side-right", "stairs-side-front-upsidedown-left", "stairs-side-left", "trap-door-side-right", "air", "air", "air"],
+            ["air", "stairs-side-front-left", "stairs-side-front-left", "stairs-side-front-left", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "side": [
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "trap-door-top-left", "trap-door-top-left", "air", "air", "air"],
+            ["trap-door-side-left", "trap-door-front", "trap-door-front", "planks", "planks", "stairs-side-upsidedown-right", "planks-slab-A", "air"],
+            ["air", "stairs-side-front-left", "stairs-side-front-left", "stairs-side-front-left", "stairs-side-upsidedown-right", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ]   ,
+        "layer1": [
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "planks", "planks", "planks", "planks", "air", "air", "air"],
+            ["air", "planks", "planks", "floater", "planks", "planks", "air", "air"],
+            ["air", "planks", "planks", "planks", "planks", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "layer2": [
+            ["air", "trap-door-top-left", "trap-door-top-left", "air", "air", "air", "air", "air"],
+            ["trap-door-side-left", "air", "air", "stairs-top-left", "stairs-side-front-upsidedown-left", "air", "air", "air"],
+            ["air", "air", "air", "staring-weel", "engine", "stairs-top-left", "planks", "air"],
+            ["trap-door-side-left", "air", "air", "stairs-top-left", "stairs-side-front-left", "air", "air", "air"],
+            ["air", "trap-door-top-right", "trap-door-top-right", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ],
+        "layer3": [
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "trap-door-front", "trap-door-front", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"],
+            ["air", "air", "air", "air", "air", "air", "air", "air"]
+        ]    
+    }
+
+}
