@@ -8,6 +8,7 @@ from datetime import datetime
 # Для терминала:
 # import sys
 # from pathlib import Path
+from deep_translator import GoogleTranslator
 # Для Insert transformer
 # import random
 # import json
@@ -45,6 +46,7 @@ class Core:
         # Помощь
         self.helping = {
             "помощь" : "для высвечивания этого текста", 
+            "языки" : "позволяет изменить язык приложения",
             "майн" : "запускает модуль майнкрафта", 
             "майнкрафт": "запускает модуль майнкрафта", 
             "школа": "запускает модуль техникума", 
@@ -53,26 +55,33 @@ class Core:
             "заметки": "показывает заметки",
             # "даты":"показывает важные даты",
             # "выбери игру": "для выбора игры из списка: ['Minecraft', 'Barotrauma', 'Flotsam', 'Terra tech', 'Timber born', 'Risen kingdom', 'Tails of iron', 'Доп. игра'] \n Где дополнительный список игр это: ['Castle story', 'Cult of the lamb', 'Dorf romantic', 'Kendle knight', 'Terra nill', 'Tin boy', 'Word of goo']",
-            "монетка": "подбрасывает монетку и говорит Орёл или решка", 
+            "монета": "подбрасывает монетку и говорит Орёл или решка", 
             "анекдот": "расказывает анекдот", 
             "курсор": "для изменения курсора", 
             "выход": "закрывает програму"
             # "дела" : "для показа списка дел"
         }
-        self.list_of_options = tuple(self.helping.keys())
+        self.main_list_of_options = list(self.helping.keys())
+        self.trn_list_of_options = list(self.helping.keys())
         self.temp = ["0","1","2","3"]
         self.sub_fill_status = 0
+        self.language = "ru"
+        self.cleaning = True
 
         # Нужен для очистки всех переменных
         # Если поставить в True то все переменные очистятся и оно снова станет False
         
         
     def back(self):
-        cleaning = True
+        self.cleaning = True
         self.sub_fill_status = 0
         self.input_state = "choise"
         self.temp = ["0","1","2","3"]
-        self.list_of_options = tuple(self.current_module.help().keys())
+        try:
+            self.main_list_of_options = list(self.current_module.help().keys())
+        except AttributeError:
+            self.main_list_of_options = list(self.helping.keys())
+
         
     def load_module(self, module, log, output):
         if log:
@@ -88,22 +97,22 @@ class Core:
             return False
 
     # def current_date_check(self, output):
-        today = datetime.today()
-        dates = data["dates"]
-        check = True
-        for i in dates:
-            if (today.day == i[0]) and (today.month == i[1]):
-                output(f"Сегодня {i}")
-                check = False
+        # today = datetime.today()
+        # dates = data["dates"]
+        # check = True
+        # for i in dates:
+        #     if (today.day == i[0]) and (today.month == i[1]):
+        #         output(f"Сегодня {i}")
+        #         check = False
 
-        if check:
-            output("Сегодня обычный день, надеюсь он проходит хорошо")
+        # if check:
+        #     output("Сегодня обычный день, надеюсь он проходит хорошо")
 
     def process(self, user, output):
 
         if self.input_state in ["choise", "sub choise"]:
 
-            if user.lower() in self.list_of_options or len(user) == 0:
+            if user.lower() in self.main_list_of_options or user.lower() in self.trn_list_of_options or len(user) == 0:
 
                 if len(user) == 0:
                     user = "any"
@@ -112,8 +121,17 @@ class Core:
 
                 if self.input_state == "choise":
                     self.user_choise = user
+
+                    if self.cleaning:
+                       self.user_sub_choise = "" 
+                       self.cleaning = False
                 else:
                     self.user_sub_choise = user
+
+                    if self.cleaning:
+                       self.user_sub_choise = "" 
+                       self.cleaning = False
+
                 
             else:
                 output("Такой опции нет")
@@ -127,7 +145,6 @@ class Core:
             self.input_state = "choise"
             return
 
-        cleaning = False
         if self.system == "main":
 
             # Входы в модули
@@ -137,7 +154,7 @@ class Core:
                 if module != False:
                     self.system = "Minecraft"
                     self.current_module = module
-                    self.list_of_options = tuple(self.current_module.help().keys())
+                    self.main_list_of_options = list(self.current_module.help().keys())
                 else:
                     output("Ошибка загрузки модуля")  
 
@@ -147,7 +164,7 @@ class Core:
                 if module != False:
                     self.system = "School"
                     self.current_module = module
-                    self.list_of_options = tuple(self.current_module.help().keys())  
+                    self.main_list_of_options = list(self.current_module.help().keys())  
                 else:
                     output("Ошибка загрузки модуля")
             
@@ -157,15 +174,32 @@ class Core:
                 if module != False:
                     self.system = "Archive"
                     self.current_module = module     
-                    self.list_of_options = tuple(self.current_module.help().keys())           
+                    self.main_list_of_options = list(self.current_module.help().keys())           
                 else:
                     output("Ошибка загрузки модуля")
 
             # обычные команды
             elif self.user_choise == "помощь":
-                output()
+                output("")
                 for i in self.helping:
-                    output(i, ":", self.helping[i])
+                    output(f"{i} : {self.helping[i]}")
+
+            elif self.user_choise == "языки":
+                output("На какой язык ты хочешь поменять?")
+                if self.input_state == "choise":
+                    self.main_list_of_options = ["en","pl","ru","назад"]
+                    self.input_state = "sub choise"
+                    return
+                else:
+                    output("")
+                    if self.user_sub_choise == self.language:
+                        output("Этот язык уже выбран")
+                    elif self.user_sub_choise == "назад":
+                        self.back()
+                    else:
+                        self.language = self.user_sub_choise
+                        output(f"Язык изменён на {self.language}") 
+                        self.back()
 
             elif self.user_choise == "заметки":
                 with open("memory_main.json", "r", encoding="utf-8") as f:
@@ -175,11 +209,11 @@ class Core:
 
                 output("Какую заметку ты хочешь увидеть?")
                 if self.input_state == "choise":
-                    self.list_of_options = ["заметка 1","заметка 2","заметка 3",]
+                    self.main_list_of_options = ["заметка 1","заметка 2","заметка 3","назад"]
                     self.input_state = "sub choise"
                     return
                 else:
-                    output()
+                    output("")
                     if self.user_sub_choise == "заметка 1":
                         for i in notes["note1"]:
                             output(i)
@@ -191,14 +225,6 @@ class Core:
                             output(i)
                     elif self.user_sub_choise == "назад":
                         self.back()
-
-            # elif self.user_choise == "даты":
-                with open("memory_main.json", "r", encoding="utf-8") as f:
-                    data = json.load(f)
-
-                dates = data["dates"]
-                for i in dates:
-                    output(f"{i}: {dates[i][0]:0>2}.{dates[i][1]:0>2}")
 
             # elif self.user_choise =="выбери игру":
                 # search_filling = True
@@ -221,7 +247,7 @@ class Core:
                     # if game == "Доп. игра":
                     #     game = choice(['Castle story', 'Cult of the lamb', 'Dorf romantic', 'Kendle knight', 'Terra nill', 'Tin boy', 'Word of goo'])
 
-                    # output()
+                    # output("")
                     # output(game)
 
             # elif self.user_input =="список дел":
@@ -234,8 +260,8 @@ class Core:
             #     for i in list_of_tasks:
             #         output(list_of_tasks[i])
 
-            elif self.user_choise == "монетка":
-                output()
+            elif self.user_choise == "монета":
+                output("")
                 if random.randint(1, 2) == 1:
                     output("Орёл")
                 else:
@@ -252,7 +278,7 @@ class Core:
                         data = json.load(f)
                     
                     joke = random.choice(data["jokes"])
-                    output()
+                    output("")
                     output(self.current_module.reveal(joke))
 
                     self.system = "main"
@@ -275,7 +301,7 @@ class Core:
                     ctypes.windll.user32.SetSystemCursor(new_cursor, changing_places[i])
 
                 output("Изменено!")
-                output()
+                output("")
 
             elif self.user_choise == "выход":
                 self.terminal_running = False
@@ -293,9 +319,9 @@ class Core:
 
             if self.user_choise == "помощь":
                 helping = self.current_module.help()
-                output()
+                output("")
                 for i in helping:
-                    output(i, ":", helping[i])
+                    output(f"{i} : {helping[i]}")
                 
 
             elif self.user_choise == "моды":
@@ -309,11 +335,11 @@ class Core:
             # схематики
 
             elif self.user_choise == "схематики":
-                output()
+                output("")
                 output("Выбери схематику")
 
                 if self.sub_fill_status == 0:
-                    self.list_of_options = ["домик", "конюшня", "лодка", "дирижабль", "назад"] #Склад
+                    self.main_list_of_options = ["домик", "конюшня", "лодка", "дирижабль", "назад"] #Склад
                     self.input_state = "sub choise"
                     self.sub_fill_status = 1
                     return
@@ -348,12 +374,12 @@ class Core:
 
                 if self.sub_fill_status == 2:
                     # Создаём список возможностей
-                    self.list_of_options = ["ресурсы", "компоненты", "спереди", "сбоку"]
+                    self.main_list_of_options = ["ресурсы", "компоненты", "спереди", "сбоку"]
                     for i in range(int(self.temp[2])):
-                        self.list_of_options.append(str(i+1))
-                    self.list_of_options.append("назад")
+                        self.main_list_of_options.append(str(i+1))
+                    self.main_list_of_options.append("назад")
 
-                    output()
+                    output("")
                     output("Выбери что ты хочешь сделать")
 
                     self.sub_fill_status = 3
@@ -396,19 +422,19 @@ class Core:
                     self.sub_fill_status = 3
 
             elif self.user_choise == "сундуки":
-                output()
+                output("")
                 result = self.current_module.show_list(True, "chests")
                 for i in result:
                     output(i)
 
             elif self.user_choise == "незер":
-                output()
+                output("")
                 result = self.current_module.show_list(True, "nether")
                 for i in result:
                     output(i)
 
             elif self.user_choise == "прочее":
-                output()
+                output("")
                 result = self.current_module.show_list(False, "other")
                 for i in result:
                     output(i)
@@ -419,7 +445,7 @@ class Core:
             elif self.user_choise == "выход":
                 output("Выход из модуля")
                 self.system = "main"
-                self.list_of_options = tuple(self.helping.keys())
+                self.main_list_of_options = list(self.helping.keys())
                 time.sleep(0.2)
 
             else:
@@ -429,9 +455,9 @@ class Core:
 
             if self.user_choise == "помощь":
                 helping = self.current_module.help()
-                output()
+                output("")
                 for i in helping:
-                    output(i, ":", helping[i])
+                    output(f"{i} : {helping[i]}")
 
             elif self.user_choise == "оценки":
                 result = self.current_module.grades()
@@ -449,7 +475,7 @@ class Core:
             elif self.user_choise == "выход":
                 output("Выход из модуля")
                 self.system = "main"
-                self.list_of_options = tuple(self.helping.keys())
+                self.main_list_of_options = list(self.helping.keys())
                 time.sleep(0.2)
 
             else:
@@ -461,9 +487,9 @@ class Core:
 
             if self.user_choise == "помощь":
                 helping = self.current_module.help()
-                output()
+                output("")
                 for i in helping:
-                    output(i, ":", helping[i])
+                    output(f"{i} : {helping[i]}")
             
             elif self.user_choise == "просмотренно":
                 result = self.current_module.show_watched(["Просмотренно до переезда в польшу", "Архивация 1"])
@@ -509,7 +535,7 @@ class Core:
                                 output(" ")
                             else:
                                 output(i)
-                        output()
+                        output("")
                         self.input_state = "choise" 
                         self.show_tultip = True
                     else:
@@ -533,13 +559,13 @@ class Core:
             elif self.user_choise == "выход":
                 output("Выход из модуля")
                 self.system = "main"
-                self.list_of_options = tuple(self.helping.keys())
+                self.main_list_of_options = list(self.helping.keys())
                 time.sleep(0.2)
 
             else:
                 output("Команда не распознона!")
 
-            if cleaning:
+            if self.cleaning:
                 if self.input_state == "choise":
                     self.user_sub_choise = ""
                     self.user_input = ""
@@ -551,4 +577,9 @@ class Core:
                     self.user_sub_choise = ""
                 
                 self.temp = ["0","1","2","3"]
-                cleaning = False
+                self.cleaning = False
+        
+        translator = GoogleTranslator(source='ru', target=self.language)
+        self.trn_list_of_options = self.main_list_of_options.copy()
+        for i in range(len(self.main_list_of_options)):
+            self.trn_list_of_options[i] = translator.translate(self.main_list_of_options[i])

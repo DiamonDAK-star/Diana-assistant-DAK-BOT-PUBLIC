@@ -1,15 +1,14 @@
 # from telegram import Update
+from deep_translator import GoogleTranslator
 from telegram.ext import Application, MessageHandler, filters
 from telegram import ReplyKeyboardMarkup
-import sys
-from pathlib import Path
 import json
-sys.path.append(str(Path(__file__).parent.parent))
 
 from Diana_core_V1 import Core
 
 core = Core()
 check = True
+
 with open("modules/Archive_module/archive.json", "r", encoding='utf-8') as f:
     data = json.load(f)
 TOKEN = data["T"]
@@ -33,15 +32,18 @@ if check:
         messages = []
 
         def output(*args):
+            for i in args:
+                i = GoogleTranslator(source='ru', target=core.language).translate(i)
             messages.append(" ".join(map(str, args)))
 
+        user = GoogleTranslator(source=core.language, target='ru').translate(user)
         core.process(user, output)
 
         await update.message.reply_text("\n".join(messages))
 
         if core.input_state in ["choise", "sub choise"] and core.show_tultip:
 
-            keyboard = make_keyboard(core.list_of_options)
+            keyboard = make_keyboard(core.main_list_of_options)
 
 
             markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)
