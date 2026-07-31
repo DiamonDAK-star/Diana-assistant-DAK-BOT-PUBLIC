@@ -4,7 +4,7 @@ from telegram.ext import Application, MessageHandler, filters
 from telegram import ReplyKeyboardMarkup
 import json
 
-from Diana_core_V1 import Core
+from core.Diana_core_V1 import Core
 
 core = Core()
 check = True
@@ -43,7 +43,7 @@ if check:
 
         if core.input_state in ["choise", "sub choise"] and core.show_tultip:
 
-            keyboard = make_keyboard(core.main_list_of_options)
+            keyboard = make_keyboard(core.list_of_options)
 
 
             markup = ReplyKeyboardMarkup(keyboard, resize_keyboard=True)

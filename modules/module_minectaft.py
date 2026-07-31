@@ -122,15 +122,39 @@ def show_list(show_keys, target):
     return result
     
 
-def help():
-    helping = {
-        "помощь" : "для высвечивания этого текста", 
-        "моды" : "показывает таблицу с модами",
-        "текстур паки" : "показывает текстур паки",
-        "схематики": "показывает схематики",
-        "сундуки" : "показывает названия сундуков для склада",
-        "незер" : "показывает список для подготовки к походу в незер",
-        "прочее" : "показываает прочие заметки",
-        "выход" : "выходит из модуля"
-    }
+def help(language):
+    helping = {}
+    if language == "ru":
+        helping = {
+            "помощь" : "для высвечивания этого текста", 
+            "моды" : "показывает таблицу с модами",
+            "текстур паки" : "показывает текстур паки",
+            "схематики": "показывает схематики",
+            "сундуки" : "показывает названия сундуков для склада",
+            "незер" : "показывает список для подготовки к походу в незер",
+            "прочее" : "показываает прочие заметки",
+            "выход" : "выходит из модуля"
+        }
+    elif language == "en":
+        helping = {
+            "help" : "shows this text", 
+            "mods" : "opens mods table",
+            "texture packs" : "opens texture pack table",
+            "scematics": "shows blueprints",
+            "chests" : "shows hint for chest organazing",
+            "nether" : "shows hint for nether",
+            "other" : "shows other notes",
+            "exit" : "exits the module"
+        }
+    elif language == "pl":
+        helping = {
+            "pomoc" : "wyświetla ten tekst", 
+            "mods" : "otwiera tabelę modyfikacji",
+            "pakiety tekstur" : "otwiera tabelę pakietów tekstur",
+            "schematy" : "wyświetla plany",
+            "skrzynie" : "wyświetla wskazówkę dotyczącą organizacji skrzyń",
+            "nether" : "wyświetla wskazówkę dotyczącą przygotowań do Netheru",
+            "inne" : "wyświetla inne notatki",
+            "wyjscie" : "wychodzi z modula"
+        }
     return helping

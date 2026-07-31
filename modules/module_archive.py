@@ -148,17 +148,35 @@ def codes(pas):
     else:
         return "Пароль не принят"
 
-def help():
-    helping = {
-        "помощь":"для показа этого текста",
-        "просмотренно": "Показывает таблицу просмотренных видео (она не полностью доставерна но что есть)", 
-        "просмотренно майнкрафт": "Показывает что ты смотрел из майнкрафт видео",  
-        "просмотренно бесконечные": "Показывает таблицу тем которые ты смотришь постоянно", 
-        "время просмотра": "Показывает время проведённое за просмотром (время занижено т. к. многое ты в архив не вписал)",
-        "сериалы": "Показывает прогресс по просмотру сериалов",
-        "пароли":"Показывает пароли от бесплатных сервисов",
-        "выход": "выход из модуля"
+def help(language):
+    helping = {}
+    if language == "ru":
+        helping = {
+            "помощь":"для показа этого текста",
+            "просмотренно": "Показыват данные из таблиц просмотренных видео (она не полностью доставерна но что есть)",  
+            "сериалы": "Показывает прогресс по просмотру сериалов",
+            "пароли":"Показывает пароли от бесплатных сервисов",
+            "цели":"цели на жизнь",
+            "выход": "выход из модуля"
         }
+    elif language == "en":
+        helping = {
+            "help": "to display this text",
+            "watched": "Shows data from tables of watched videos (it's not completely reliable, but it's what it is)",
+            "series": "Shows your progress in watching series",
+            "passwords": "Shows passwords for free services",
+            "goals": "shows goals for life of author",
+            "exit": "exit the module"
+        }
+    elif language == "pl":
+        helping = {
+            "pomoc": "aby wyświetlić ten tekst",
+            "ogladane": "Pokazuje dane z tabeli obejrzanych filmów (nie są one w pełni wiarygodne, ale takie już są)",
+            "serialy": "Pokazuje postępy w oglądaniu seriali",
+            "hasla": "Pokazuje hasła do bezpłatnych usług",
+            "cele": "Pokazuje cele życiowe autora",
+            "wyjscie": "aby wyjść z modułu"
+        }             
     return helping
 
 # show_watched(["Бесконечные"])

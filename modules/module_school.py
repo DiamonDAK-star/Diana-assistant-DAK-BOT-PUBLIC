@@ -70,12 +70,29 @@ def grades():
 
     return result
 
-def help():
-    helping = {
-        "помощь":"для показа этого текста",
-        "оценки" : "для показа оценок",
-        # "статусы" : "для показа статусов по предметам",
-        "средний бал" : "для показа среднего бала по всем оценкам",
-        "выход":"для выхода из модуля"
-    }
+def help(language):
+    helping = {}
+    if language == "ru":
+        helping = {
+            "помощь":"для показа этого текста",
+            "оценки" : "для показа оценок",
+            # "статусы" : "для показа статусов по предметам",
+            "средний бал" : "для показа среднего бала по всем оценкам",
+            "выход":"для выхода из модуля"
+        }
+    elif language == "en":
+        helping = {
+            "help": "to show this text",
+            "grades": "to show grades",
+            "average grade": "to show the average grade for all grades",
+            "exit": "to exit the module"
+        }
+    elif language == "pl":
+        helping = {
+            "pomoc": "aby wyświetlić ten tekst",
+            "wyniki": "aby wyświetlić oceny",
+            "średni wynik": "aby wyświetlić średnią ocen ze wszystkich ocen",
+            "wyjscie": "aby wyjść z modułu"
+        } 
+
     return helping

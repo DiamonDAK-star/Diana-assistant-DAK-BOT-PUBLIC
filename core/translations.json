@@ -1,0 +1,143 @@
+{
+    "ru": {
+        "helping": {
+            "помощь": "для высвечивания этого текста",
+            "языки": "позволяет изменить язык приложения",
+            "автоперевод": "позволяет включить или выключить автоперевод текстов для которых не заготовлен перевод",
+            "майнкрафт": "запускает модуль майнкрафта",
+            "техникум": "запускает модуль техникума",
+            "архив": "запускает модуль архивов",
+            "заметки": "показывает заметки",
+            "даты": "показывает важные даты",
+            "монета": "подбрасывает монетку и говорит Орёл или решка",
+            "анекдот": "расказывает анекдот",
+            "курсор": "для изменения курсора",
+            "выход": "закрывает програму"
+        },
+        "moduleloading": {
+            "module_loading": "Загрузка модуля",
+            "module_loaded": "Модуль загружен",
+            "module_loading_error": "Ошибка загрузки модуля",
+            "exiting_from_module": "Выход из модуля"
+        },
+        "normal_day": "Сегодня обычный день, надеюсь он проходит хорошо",
+        "no_such_option": "Такой опции нет",
+        "input_state_error": "Ошибка состояния ввода",
+        "main_functions": {
+            "translation": {
+                "what_language": "На какой язык ты хочешь поменять?",
+                "language_already_chosen": "Этот язык уже выбран",
+                "language_changed": "Язык изменён на",
+                "autotlanslation_set": "Установлен автоматический перевод как"
+            },
+            "what_note": "Какую заметку ты хочешь увидеть?",
+            "head": "Орёл",
+            "tail": "Решка",
+            "cursor_changed": "Курсор изменён",
+            "decode_error": "Ошибка декода",
+            "core_stoping": "Остановка ядра...",
+            "exiting": "Выход..."
+        },
+        "minecraft_module": {
+            "choose_the_shematic": "Выбери схематику",
+            "what_do_you_want_to_do": "Выбери что ты хочешь сделать",
+            "image_generation_error": "Ошибка генерации изображения"
+        },
+        "technikum_module": {},
+        "archive_module": {}
+    },
+    "en": {
+        "helping": {
+            "help": "to highlight this text",
+            "languages": "allows you to change the application language",
+            "autotranslate": "allows you to enable or disable autotranslation of texts for which no translation is available",
+            "minecraft": "launches the minecraft module",
+            "technikum": "launches the technikum module",
+            "archive": "launches the archive module",
+            "notes": "displays notes",
+            "dates": "displays important dates",
+            "coin": "flips a coin and says heads or tails",
+            "joke": "tells a joke",
+            "cursor": "to change the cursor",
+            "exit": "closes the program"
+        },
+        "moduleloading": {
+            "module_loading": "Loading module",
+            "module_loaded": "Module loaded",
+            "module_loading_error": "Loading error",
+            "exiting_from_module": "Exiting from module"
+        },
+        "normal_day": "Today is a normal day",
+        "no_such_option": "No such option",
+        "input_state_error": "Input state error",
+        "main_functions": {
+            "translation": {
+                "what_language": "What language do you want to change to?",
+                "language_already_chosen": "This language is already chosen",
+                "language_changed": "Language changed to",
+                "autotlanslation_set": "set auto translate to"
+            },
+            "what_note": "What note do you want to see?",
+            "head": "Heads",
+            "tail": "Tails",
+            "cursor_changed": "Cursor changed",
+            "decode_error": "Decoding error",
+            "core_stoping": "Stopping core...",
+            "exiting": "Exiting..."
+        },
+        "minecraft_module": {
+            "choose_the_shematic": "Choose the schematic",
+            "what_do_you_want_to_do": "Choose what you want to make",
+            "image_generation_error": "Image generation error"
+        },
+        "technikum_module": {},
+        "archive_module": {}
+    },
+    "pl": {
+        "helping": {
+            "pomoc": "aby wyswietlic  ten tekst",
+            "jezyki": "umożliwia zmianę języka aplikacji",
+            "autotlumaczenie": "umożliwia włączenie lub wyłączenie automatycznego tłumaczenia tekstów, dla których tłumaczenie nie jest dostępne",
+            "minecraft": "uruchamia moduł Minecraft",
+            "technikum": "uruchamia moduł Technikum",
+            "archive": "uruchamia moduł Archive",
+            "notatki": "wyświetla notatki",
+            "daty": "wyświetla ważne daty",
+            "moneta": "rzuca monetą i mówi orzeł czy reszka",
+            "zart": "opowiada dowcip",
+            "kursor": "aby zmienić kursor",
+            "wyjście": "zamyka program"
+        },
+        "moduleloading": {
+            "module_loading": "Ładowanie modułu",
+            "module_loaded": "Moduł załadowany",
+            "module_loading_error": "Błąd ładowania",
+            "exiting_from_module": "Wychodzenie z modułu"
+        },
+        "normal_day": "Dzisiaj jest normalny dzień",
+        "no_such_option": "Brak takiej opcji",
+        "input_state_error": "Błąd stanu wejścia",
+        "main_functions": {
+            "translation": {
+                "what_language": "Na jaki język chcesz zmienić?",
+                "language_already_chosen": "Ten język jest już wybrany",
+                "language_changed": "Język zmieniony na",
+                "autotlanslation_set": "ustawiono automatyczne tłumaczenie na"
+            },
+            "what_note": "Jaką notatkę chcesz zobaczyć?",
+            "head": "Orzeł",
+            "tail": "Reszka",
+            "cursor_changed": "Kursor został zmieniony",
+            "decode_error": "Błąd dekodowania",
+            "core_stoping": "Zatrzymywanie jądra...",
+            "exiting": "Wychodzenie..."
+        },
+        "minecraft_module": {
+            "choose_the_shematic": "Wybierz schemat",
+            "what_do_you_want_to_do": "Wybierz, co chcesz utworzyć",
+            "image_generation_error": "Błąd generowania obrazu"
+        },
+        "technikum_module": {},
+        "archive_module": {}
+    }
+}
